@@ -33,7 +33,7 @@ module.exports.asktheExpert = function (req, res) {
             res
                 .status(201)
                 .json({success: true, ate: ate});
-            
+            var slackurl = "";
             var testString = 
                 slack.send({
                     text : 'Ask the Expert - New Question Alert for Category:  ' + ate.category,
