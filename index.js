@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var http = require('http');
 var https = require('https');
 const fs = require('fs');
-
+var gg = {};
 app.set('port', 3001);
 
 app.use(express.static(path.join(__dirname, 'dist')));
