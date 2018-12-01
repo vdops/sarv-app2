@@ -29,7 +29,7 @@ module.exports.asktheExpert = function (req, res) {
         }
         else { 
             
-            console.log("Question Posted", ate);
+            console.log("Question Posted on site:", ate);
             res
                 .status(201)
                 .json({success: true, ate: ate});
